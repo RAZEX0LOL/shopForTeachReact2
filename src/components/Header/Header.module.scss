@@ -5,6 +5,25 @@ header{
         font-weight: 600;
         font-size: 26px;
     }
+    
+
+    .nav{
+        float: right;
+        list-style: none;
+
+        li{
+            display: inline;
+            margin-left: 25px;
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: 600;
+            transition: opacity 500ms ease;
+        }
+
+        li:hover{
+            opacity: 0.5;
+        }
+    }
 
     .presentation{
         margin:50px 0;
@@ -16,6 +35,7 @@ header{
         // background-blend-mode: multiply;
         // background-color: #353535;
         position: relative;
+        border-radius: 15px;
     }
 
     .presentation::after{
