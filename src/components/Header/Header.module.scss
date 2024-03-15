@@ -1,6 +1,21 @@
 header {
     position: relative;
 
+    .empty {
+        h2 {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .summa{
+        float: left;
+        width: 100%;
+        font-weight: 600;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
     .logo {
         font-weight: 600;
         font-size: 26px;
@@ -28,13 +43,12 @@ header {
         float: right;
         cursor: pointer;
         font-size: 20px;
-        transition: color,transform 500ms ease;
-
+        transition: color, transform 500ms ease;
 
         &:hover,
         &.active {
             color: rgb(255, 0, 0) !important;
-            transform:scale(1.5);
+            transform: scale(1.5);
         }
     }
 
@@ -45,11 +59,11 @@ header {
         width: 450px;
         min-height: 100px;
         background: #258bad;
-        -webkit-box-shadow: -20px 20px 22px 12px rgba(7, 7, 7, 0.23);
-        -moz-box-shadow: -20px 20px 22px 12px rgba(7, 7, 7, 0.23);
         box-shadow: -20px 20px 22px 12px rgba(7, 7, 7, 0.23);
         z-index: 1000;
-        }
+        padding: 20px;
+        padding-bottom: 0;
+        border-radius: 15px;
     }
 
     .presentation {
@@ -82,4 +96,4 @@ header {
             font-size: 35px;
         }
     }
-
+}

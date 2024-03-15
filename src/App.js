@@ -91,15 +91,22 @@ export default function App() {
   ]);
   const[orders,setOrders]=useState([]);
 
+
+  const deleteOrder = (id) =>{
+    setOrders(orders.filter((el)=> el.id!==id));
+  }
+
   const addToOrder=(item)=>{
     if(!orders.some((el)=>el.id===item.id)){
       setOrders([...orders,item]);
-    }
+    }//добавление товара, но одного типа
+
+    //setOrders([...orders,item]); без if неограниченное количество товаров одного типа
   }
 
   return (
     <div className="wrapper">
-      <Header orders={orders}/>
+      <Header orders={orders} onDelete={deleteOrder}/>
       <Items allItems={items} onAdd={addToOrder}/>
       <Footer />
     </div>
