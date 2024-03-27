@@ -1,9 +1,13 @@
 import React from "react";
 import styles from "./Orders.module.scss";
 import { TiDeleteOutline } from "react-icons/ti";
-import {useAppContext} from "./../../useAppContext";
+import { useAppContext } from "./../../useAppContext.tsx";
 
-export default function Orders({item}){
+interface Props{
+    item:any;
+}
+
+const Orders:React.FC<Props>=({item})=>{
 
     const {deleteOrder} = useAppContext();
 
@@ -16,3 +20,4 @@ export default function Orders({item}){
         </div>
     );
 }
+export default Orders;
