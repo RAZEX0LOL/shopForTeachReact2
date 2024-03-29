@@ -3,7 +3,7 @@ import styles from "./Footer.module.scss";
 
 const Footer:React.FC=()=>{
     return(
-        <footer style={styles.footer}>
+        <footer className={styles.footer}>
             Все права защищены &copy;
         </footer>
     );
