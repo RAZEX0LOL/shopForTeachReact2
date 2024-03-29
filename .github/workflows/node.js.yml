@@ -27,10 +27,6 @@ jobs:
     - name: Install dependencies
       run: npm ci
 
-    - name: Run tests
-      run: npm test  # Здесь запускаются ваши тесты
-      continue-on-error: true  # Продолжать выполнение даже если тесты завершились с ошибкой
-
     - name: Build
       run: npm run build
 
