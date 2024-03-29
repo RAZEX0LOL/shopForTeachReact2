@@ -1,5 +1,5 @@
 {
-  "homepage" : "https://razex0lol.github.io/shopForTeachReact2/",
+  "homepage": "https://razex0lol.github.io/shopForTeachReact2/",
   "name": "project",
   "version": "0.1.0",
   "private": true,
@@ -11,6 +11,8 @@
     "@types/node": "^20.11.30",
     "@types/react": "^18.2.72",
     "@types/react-dom": "^18.2.22",
+    "axios": "^1.6.8",
+    "axios-mock-adapter": "^1.22.0",
     "gh-pages": "^6.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -22,7 +24,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy":"npm run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
